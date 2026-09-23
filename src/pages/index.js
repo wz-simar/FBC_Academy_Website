@@ -6,7 +6,6 @@ import WhyPlansFail from "@/components/WhyPlansFail";
 import BodyReset from "@/components/BodyReset";
 import TransformationSection from "@/components/TransformationSection";
 import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -41,7 +40,6 @@ export default function Home() {
       <main className="pt-16">
         <Hero />
         <WhyPlansFail />
-        <TestimonialsSection />
         <BodyReset />
         <TransformationSection />
         <AboutSection />
@@ -59,7 +57,7 @@ export default function Home() {
           </div>
         </section>
         <MediaSection />
-        <ServicesSection />
+        <TestimonialsSection />
         <Footer />
       </main>
     </>

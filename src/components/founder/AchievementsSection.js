@@ -8,9 +8,10 @@ import Link from "next/link";
 export function ValorClassicBanner({ showCta = true }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-lg">
-      <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[5/4] bg-black">
+      {/* achievement_14 is 1600×800 (2:1) — keep full poster visible, no crop/stretch */}
+      <div className="relative w-full aspect-[2/1] bg-[#0b0614]">
         <Image
-          src="/images/achievements/achievement_11.jpg"
+          src="/images/achievements/achievement_14.jpg"
           alt="Valor Classic National Level Championship - Confirmed Judge Ankush Bhaskar"
           fill
           sizes="(max-width: 1024px) 100vw, 1024px"

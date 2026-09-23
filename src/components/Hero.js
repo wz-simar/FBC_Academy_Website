@@ -112,10 +112,8 @@ export default function Hero() {
             </div>
             <div className="hidden sm:block w-px h-10 bg-gray-300" aria-hidden="true" />
             <div className="flex flex-col items-center gap-0.5">
-                <h3 className="text-sm font-bold text-gray-800 text-center leading-snug">Internationally<br/>Accredited</h3>
-            </div>
-            <div className="flex flex-col items-center gap-0.5">
-                <h3 className="text-sm font-bold text-gray-800">Fitness Author</h3>
+                <h3 className="font-playfair text-3xl font-bold text-[#1142D4] leading-none">Fitness</h3>
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-500">Author</span>
             </div>
           </div>
         </div>

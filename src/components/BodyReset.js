@@ -7,7 +7,6 @@ import { FaHeadphones } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const highlight = "font-semibold text-gray-800";
-const accent = "font-semibold text-[#1142D4]";
 
 const BodyReset = () => {
     const reasons = [
@@ -16,10 +15,10 @@ const BodyReset = () => {
         description: (
             <>
                 We prove that{" "}
-                <span className={accent}>3 x 30-45 Minutes sessions</span>{" "}
+                <span className={highlight}>3 x 30-45 Minutes sessions</span>{" "}
                 per week are more effective than six days of random effort when every move is backed by{" "}
                 <span className={highlight}>science</span>. It is the{" "}
-                <span className={accent}>&quot;minimum effective dose&quot;</span>{" "}
+                <span className={highlight}>&quot;minimum effective dose&quot;</span>{" "}
                 that builds <span className={highlight}>strength</span> and boosts{" "}
                 <span className={highlight}>metabolism</span> without leaving you drained.
             </>
@@ -33,7 +32,7 @@ const BodyReset = () => {
         description: (
             <>
                 Forget the headache of rigid &quot;diet charts&quot; or the social awkwardness of constantly saying, &quot;No, I&apos;m on a diet&quot;. We use a{" "}
-                <span className={accent}>flexible, habit-based nutrition system</span>{" "}
+                <span className={highlight}>flexible, habit-based nutrition system</span>{" "}
                 that integrates into your life so you can handle{" "}
                 <span className={highlight}>business travel</span>,{" "}
                 <span className={highlight}>meetings</span> and{" "}
@@ -49,12 +48,12 @@ const BodyReset = () => {
         description: (
             <>
                 We prioritize fixing your{" "}
-                <span className={accent}>internal health</span>{" "}
+                <span className={highlight}>internal health</span>{" "}
                 first by nourishing your body with{" "}
                 <span className={highlight}>sufficient food</span>,{" "}
                 <span className={highlight}>optimizing your hormones</span>, and improving{" "}
                 <span className={highlight}>sleep quality</span>. By ending{" "}
-                <span className={accent}>mid-day crashes</span> and{" "}
+                <span className={highlight}>mid-day crashes</span> and{" "}
                 <span className={highlight}>sharpening your focus</span>, we ensure you perform at your peak.
             </>
         ),
@@ -67,12 +66,12 @@ const BodyReset = () => {
         description: (
             <>
                 You won&apos;t just follow a plan; you will{" "}
-                <span className={accent}>master the &quot;Why&quot;</span>{" "}
+                <span className={highlight}>master the &quot;Why&quot;</span>{" "}
                 behind it through{" "}
-                <span className={accent}>Fitness Literacy</span>. We equip you with the logic to make the{" "}
+                <span className={highlight}>Fitness Literacy</span>. We equip you with the logic to make the{" "}
                 <span className={highlight}>right decisions</span> for yourself, giving you the{" "}
                 <span className={highlight}>lifelong skills</span> to{" "}
-                <span className={accent}>stay fit, healthy, and in shape 365 days a year</span>.
+                <span className={highlight}>stay fit, healthy, and in shape 365 days a year</span>.
             </>
         ),
         icon: <FaHeadphones className="w-8 h-8" />,
