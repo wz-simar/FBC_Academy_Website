@@ -34,13 +34,13 @@ const GalleryHero = ({
         className="
         grid grid-cols-1 md:grid-cols-3
         gap-4 md:gap-6
-        auto-rows-[240px] md:auto-rows-[220px]
+        auto-rows-auto md:auto-rows-[220px]
       "
       >
         {visibleImages.map((item, index) => {
           const pattern = index % 6
-          let className = "relative overflow-hidden group rounded-lg"
-          className += " h-[240px]"
+          let className = "relative overflow-hidden group rounded-lg aspect-[4/5] md:aspect-auto"
+          className += " md:h-[240px]"
 
           if (pattern === 0) {
             className += " md:col-span-2 md:row-span-2 md:h-auto"
@@ -53,7 +53,7 @@ const GalleryHero = ({
               <img
                 src={item.src}
                 alt={`${item.name} transformation`}
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-90" />
               <div className="absolute bottom-4 left-4 right-4">

@@ -119,7 +119,7 @@ export default function AboutSection() {
 
             <a
               href="/about-founder"
-              className="inline-flex items-center gap-2 bg-[#1142D4] text-white px-7 py-3 rounded-md font-semibold hover:bg-blue-800 transition w-fit"
+              className="inline-flex items-center justify-center gap-2 bg-[#1142D4] text-white px-7 py-3 rounded-md font-semibold hover:bg-blue-800 transition w-full sm:w-fit"
             >
               Read My Full Story <FaArrowRight />
             </a>

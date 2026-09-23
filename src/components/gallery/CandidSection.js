@@ -62,7 +62,7 @@ export default function CandidSection() {
               alt={`candid-${index}`}
               width={500}
               height={500}
-              className="w-full h-[300px] md:h-[360px] object-cover transition duration-500 group-hover:scale-110"
+              className="w-full aspect-[4/5] md:aspect-auto md:h-[360px] object-cover object-center transition duration-500 group-hover:scale-110"
             />
 
             {/* Overlay */}

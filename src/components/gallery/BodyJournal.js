@@ -11,7 +11,7 @@ const BodyJournal = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="relative h-[300px] md:h-[420px] rounded-lg overflow-hidden group"
+          className="relative aspect-[4/5] md:aspect-auto md:h-[420px] rounded-lg overflow-hidden group"
         >
           <motion.img
             whileHover={{ scale: 1.05 }}

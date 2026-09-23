@@ -90,7 +90,7 @@ const BodyReset = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16 space-y-4 max-w-4xl mx-auto"
                 >
-                    <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary">
+                    <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900">
                         The Solution: The Total Body <span className="text-[#1142D4]">Re-Set</span>
                     </h2>
                     <p className="text-xl font-bold text-gray-800">
@@ -114,7 +114,7 @@ const BodyReset = () => {
                             <div className={`${item.color} ${item.iconColor} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:rotate-12`}>
                                 {item.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-primary mb-4 font-playfair">{item.title}</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4 font-playfair">{item.title}</h3>
                             <p className="text-gray-500 text-sm leading-relaxed">
                                 {item.description}
                             </p>

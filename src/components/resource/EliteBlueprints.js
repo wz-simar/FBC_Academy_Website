@@ -61,12 +61,12 @@ const EliteBlueprints = () => {
               className="group block overflow-hidden rounded-3xl shadow-xl bg-white transition hover:-translate-y-1"
             >
 
-              <div className="relative h-[300px] w-full">
+              <div className="relative aspect-video w-full">
                 <Image
                   src={video.poster}
                   alt={video.title}
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center">

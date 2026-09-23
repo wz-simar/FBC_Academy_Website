@@ -36,13 +36,13 @@ const ResourcesHero = () => {
       <div className="bg-white shadow-2xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-15">
 
-          {/* LEFT IMAGE */}
-          <div className="p-0 flex items-start">
-            <div className="w-full h-[90%] md:h-[540px] pr-0">
+          {/* LEFT IMAGE — full photo on mobile, framed on desktop */}
+          <div className="p-0 flex items-start bg-gray-100">
+            <div className="relative w-full md:h-[540px] overflow-hidden">
               <img
                 src="/ank1.jpg"
                 alt="featured"
-                className="w-full h-full object-cover object-top block"
+                className="w-full h-auto md:h-full md:absolute md:inset-0 md:object-cover md:object-top block"
               />
             </div>
           </div>
@@ -70,10 +70,10 @@ const ResourcesHero = () => {
 
             <a
               href="#blogs"
-              className="font-semibold text-black cursor-pointer hover:opacity-70 transition"
+              className="font-semibold text-[#1142D4] cursor-pointer hover:text-blue-800 transition"
             >
               Explore the Blog{" "}
-              <span className="text-gray-500">→ Latest Articles</span>
+              <span className="text-[#67bc2a]">→ Latest Articles</span>
             </a>
 
           </div>

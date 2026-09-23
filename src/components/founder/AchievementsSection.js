@@ -9,7 +9,7 @@ export function ValorClassicBanner({ showCta = true }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-950 shadow-lg">
       {/* achievement_14 is 1600×800 (2:1) — keep full poster visible, no crop/stretch */}
-      <div className="relative w-full aspect-[2/1] bg-[#0b0614]">
+      <div className="relative w-full aspect-[2/1] bg-[#0a0f1c]">
         <Image
           src="/images/achievements/achievement_14.jpg"
           alt="Valor Classic National Level Championship - Confirmed Judge Ankush Bhaskar"
@@ -19,9 +19,9 @@ export function ValorClassicBanner({ showCta = true }) {
           priority
         />
       </div>
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-5 py-4 bg-gradient-to-r from-[#1a0a2e] to-[#2e1048] text-white">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-5 py-4 bg-gradient-to-r from-[#0a0f1c] to-[#1142D4] text-white">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-yellow-300 mb-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#67bc2a] mb-1">
             National Stage
           </p>
           <h3 className="font-playfair text-lg sm:text-xl font-bold">

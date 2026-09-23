@@ -23,7 +23,7 @@ const mediaItems = [
 
 function MediaCard({ item }) {
   return (
-    <article className="group relative mx-3 w-[260px] sm:w-[300px] md:w-[320px] shrink-0 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-xl">
+    <article className="group relative mx-2.5 sm:mx-3 w-[220px] sm:w-[280px] md:w-[320px] shrink-0 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-xl">
       <div className="relative w-full aspect-[3/4]">
         <Image
           src={item.src}
@@ -59,10 +59,10 @@ export default function MediaSection() {
         </p>
       </div>
 
-      <div className="relative w-[80%] max-w-6xl mx-auto">
+      <div className="relative w-full sm:w-[80%] max-w-6xl mx-auto overflow-hidden">
         {/* Soft edge fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 sm:w-12 bg-gradient-to-r from-gray-50 to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 sm:w-12 bg-gradient-to-l from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-6 sm:w-12 bg-gradient-to-r from-gray-50 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-6 sm:w-12 bg-gradient-to-l from-white to-transparent" />
 
         <Marquee
           gradient={false}

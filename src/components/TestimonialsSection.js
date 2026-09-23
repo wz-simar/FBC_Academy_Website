@@ -33,15 +33,15 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 text-center">
         
         {/* TITLE */}
-        <h2 className="text-3xl md:text-5xl font-playfair font-bold text-primary mb-10 sm:mb-20">
+        <h2 className="text-3xl md:text-5xl font-playfair font-bold text-gray-900 mb-10 sm:mb-20">
           Client <span className="text-[#1142D4]">Testimonials</span>
         </h2>
 
         {/* CAROUSEL */}
-        <div className="relative px-2 sm:px-8">
+        <div className="relative px-0 sm:px-8">
           <Swiper
             modules={[Autoplay, Navigation, Pagination]}
-            spaceBetween={24}
+            spaceBetween={16}
             slidesPerView={1}
             loop={true}
             autoplay={{
@@ -51,15 +51,15 @@ export default function TestimonialsSection() {
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              640: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 24 },
+              1024: { slidesPerView: 3, spaceBetween: 24 },
             }}
-            className="pb-12" // Padding for pagination dots
+            className="pb-12"
           >
             {testimonials.map((src, i) => (
               <SwiperSlide key={i} className="pb-8">
-                <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 h-96 relative border border-gray-100 flex items-center justify-center p-2">
+                <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 h-[320px] sm:h-96 relative border border-gray-100 flex items-center justify-center p-2">
                   <Image
                     src={src}
                     alt={`Testimonial ${i + 1}`}
@@ -88,6 +88,11 @@ export default function TestimonialsSection() {
         }
         .swiper-pagination-bullet-active {
           background-color: #1142D4 !important;
+        }
+        @media (max-width: 639px) {
+          .swiper-button-next, .swiper-button-prev {
+            display: none !important;
+          }
         }
       `}</style>
     </section>

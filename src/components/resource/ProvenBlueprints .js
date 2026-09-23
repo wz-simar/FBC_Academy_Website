@@ -33,11 +33,11 @@ const ProvenBlueprints = () => {
               onClick={() => handleOpenModal(ebook)}
               className="group bg-[#F3F3F7] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow cursor-pointer text-left flex flex-col"
             >
-              <div className="relative h-[300px] md:h-[340px] overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden bg-[#e8e8ed]">
                 <img
                   src={ebook.image}
                   alt={ebook.title}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                 />
               </div>
               <div className="p-6 md:p-8 space-y-3 flex-1 flex flex-col">

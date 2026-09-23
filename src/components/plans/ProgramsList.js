@@ -99,7 +99,7 @@ export default function ProgramsList({
       </div>
 
       {lpNotice && (
-        <div className="mb-8 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-amber-900 text-sm text-center">
+        <div className="mb-8 rounded-xl border border-[#1142D4]/20 bg-[#1142D4]/5 px-4 py-3 text-[#0a0f1c] text-sm text-center">
           Landing page link for <strong>{lpNotice}</strong> will be added soon.
           Please check back shortly.
         </div>
@@ -119,7 +119,7 @@ export default function ProgramsList({
             <div className="flex-1 space-y-4">
               <div className="flex flex-wrap gap-2">
                 {plan.comingSoon && (
-                  <span className="inline-flex rounded-full bg-amber-100 text-amber-800 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+                  <span className="inline-flex rounded-full bg-[#67bc2a]/15 text-[#3d7a14] px-3 py-1 text-xs font-bold uppercase tracking-wider">
                     Coming Soon
                   </span>
                 )}
@@ -151,7 +151,7 @@ export default function ProgramsList({
               <button
                 type="button"
                 onClick={() => setSelectedPlan(plan)}
-                className="w-full bg-white text-gray-800 border-2 border-gray-200 hover:border-gray-300 px-4 py-3 rounded-md font-bold flex justify-center items-center gap-2 transition"
+                className="w-full bg-white text-[#1142D4] border-2 border-[#1142D4]/30 hover:border-[#1142D4] hover:bg-[#1142D4]/5 px-4 py-3 rounded-md font-bold flex justify-center items-center gap-2 transition"
               >
                 Know More <FaInfoCircle />
               </button>

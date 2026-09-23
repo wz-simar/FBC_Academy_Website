@@ -13,16 +13,16 @@ export default function TransformationSection() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="flex-1 flex flex-col sm:flex-row bg-[#0b1220]"
+        className="flex-1 flex flex-col md:flex-row bg-[#0b1220]"
       >
-        <div className="relative w-full sm:w-[42%] shrink-0 h-[260px] sm:h-auto sm:min-h-[320px] bg-[#111827] flex items-center justify-center">
+        <div className="relative w-full md:w-[42%] shrink-0 h-[240px] sm:h-[280px] md:h-auto md:min-h-[320px] bg-[#111827] flex items-center justify-center">
           <Image
             src="/choose_path_a.jpg"
             alt="Get Fit — physique and professional presence"
             width={2187}
             height={2448}
-            sizes="(max-width: 640px) 100vw, 25vw"
-            className="max-h-[260px] sm:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
+            sizes="(max-width: 768px) 100vw, 25vw"
+            className="max-h-[240px] sm:max-h-[280px] md:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
           />
         </div>
 
@@ -46,7 +46,7 @@ export default function TransformationSection() {
 
           <a
             href="/plans/get-fit"
-            className="bg-[#1142D4] hover:bg-blue-800 font-playfair px-5 py-2.5 rounded-md text-white font-semibold flex items-center justify-center gap-2 transition w-fit text-sm sm:text-base"
+            className="bg-[#1142D4] hover:bg-blue-800 font-playfair px-5 py-2.5 rounded-md text-white font-semibold flex items-center justify-center gap-2 transition w-full sm:w-fit text-sm sm:text-base"
           >
             Explore Transformation Programs <FaArrowRight />
           </a>
@@ -59,16 +59,16 @@ export default function TransformationSection() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex-1 flex flex-col sm:flex-row bg-[#1a1f1e]"
+        className="flex-1 flex flex-col md:flex-row bg-[#1a1f1e]"
       >
-        <div className="relative w-full sm:w-[42%] shrink-0 h-[260px] sm:h-auto sm:min-h-[320px] bg-[#2a2f2e] flex items-center justify-center">
+        <div className="relative w-full md:w-[42%] shrink-0 h-[240px] sm:h-[280px] md:h-auto md:min-h-[320px] bg-[#2a2f2e] flex items-center justify-center">
           <Image
             src="/choose_path_b.png"
             alt="Coach — teaching and mentoring on the whiteboard"
             width={780}
             height={1146}
-            sizes="(max-width: 640px) 100vw, 25vw"
-            className="max-h-[260px] sm:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
+            sizes="(max-width: 768px) 100vw, 25vw"
+            className="max-h-[240px] sm:max-h-[280px] md:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
           />
         </div>
 
@@ -92,7 +92,7 @@ export default function TransformationSection() {
 
           <a
             href="/plans/elite-coach"
-            className="bg-[#67bc2a] hover:bg-green-600 font-playfair px-5 py-2.5 rounded-md text-white font-semibold flex items-center justify-center gap-2 transition w-fit text-sm sm:text-base"
+            className="bg-[#67bc2a] hover:bg-green-600 font-playfair px-5 py-2.5 rounded-md text-white font-semibold flex items-center justify-center gap-2 transition w-full sm:w-fit text-sm sm:text-base"
           >
             Explore Fitness Coach Launchpad <FaArrowRight />
           </a>

@@ -52,7 +52,7 @@ const GlobalAuthority = () => {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             Global Authority
           </h2>
           <div className="w-20 rounded-sm h-2 bg-[#67bc2a] mb-4 mx-auto"></div>
@@ -73,7 +73,7 @@ const GlobalAuthority = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-primary mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
                 {item.title}
               </h3>
 

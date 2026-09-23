@@ -37,7 +37,7 @@ export default function Home() {
         <FaWhatsapp className="w-6 h-6" />
       </a>
 
-      <main className="pt-16">
+      <main className="pt-16 overflow-x-hidden">
         <Hero />
         <WhyPlansFail />
         <BodyReset />

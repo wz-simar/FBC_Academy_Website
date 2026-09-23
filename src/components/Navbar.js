@@ -45,17 +45,17 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-[68px] md:h-20">
 
           {/* Logo: mark + wordmark sized independently so text stays readable */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0 mr-3 sm:mr-4">
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-3 shrink-0 min-w-0 mr-2 sm:mr-4">
             <img
               src="/logo-mark.png"
               alt=""
               aria-hidden="true"
-              className="h-9 sm:h-10 md:h-11 w-auto object-contain"
+              className="h-8 sm:h-10 md:h-11 w-auto object-contain shrink-0"
             />
             <img
               src="/logo-wordmark.png"
               alt="Fit Body Culture"
-              className="h-10 sm:h-11 md:h-12 w-auto object-contain"
+              className="h-8 sm:h-10 md:h-12 w-auto max-w-[118px] xs:max-w-[140px] sm:max-w-none object-contain object-left"
             />
           </Link>
 
@@ -64,7 +64,7 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <div key={item.label} className="relative group">
                 {item.dropdown ? (
-                  <div className="flex items-center cursor-pointer text-gray-700 hover:text-indigo-600 font-medium font-manrope py-5">
+                  <div className="flex items-center cursor-pointer text-gray-700 hover:text-[#1142D4] font-medium font-manrope py-5">
                     {item.label} <FaChevronDown className="ml-1 text-xs" />
                     {/* Dropdown Menu */}
                     <div className="absolute top-16 left-0 w-56 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
@@ -72,7 +72,7 @@ export default function Navbar() {
                         <Link
                           key={subItem.path}
                           href={subItem.path}
-                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 font-medium border-b border-gray-100 last:border-none"
+                          className="block px-4 py-3 text-sm text-gray-700 hover:bg-[#1142D4]/10 hover:text-[#1142D4] font-medium border-b border-gray-100 last:border-none"
                         >
                           {subItem.label}
                         </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={item.path}
-                    className="text-gray-700 hover:text-indigo-600 font-medium font-manrope py-5"
+                    className="text-gray-700 hover:text-[#1142D4] font-medium font-manrope py-5"
                   >
                     {item.label}
                   </Link>
@@ -95,15 +95,20 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Link
               href="/contact-us"
-              className="bg-indigo-600 text-white px-5 py-2 rounded-2xl hover:bg-indigo-700 transition font-manrope"
+              className="bg-[#1142D4] text-white px-5 py-2 rounded-2xl hover:bg-blue-800 transition font-manrope"
             >
               Get Started
             </Link>
           </div>
 
           {/* Mobile Toggle */}
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)}>
+          <div className="md:hidden flex items-center shrink-0">
+            <button
+              type="button"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              className="p-2 -mr-2"
+            >
               {isOpen ? (
                 <FaTimes className="text-2xl text-gray-700" />
               ) : (
@@ -125,7 +130,7 @@ export default function Navbar() {
                   <>
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      className="flex items-center justify-between w-full px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 font-medium text-lg font-manrope text-left"
+                      className="flex items-center justify-between w-full px-3 py-2 rounded-md text-gray-700 hover:bg-[#1142D4]/10 hover:text-[#1142D4] font-medium text-lg font-manrope text-left"
                     >
                       {item.label} <FaChevronDown className={`text-sm transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`} />
                     </button>
@@ -135,7 +140,7 @@ export default function Navbar() {
                           <Link
                             key={subItem.path}
                             href={subItem.path}
-                            className="block px-3 py-2 text-md text-gray-600 hover:text-indigo-600"
+                            className="block px-3 py-2 text-md text-gray-600 hover:text-[#1142D4]"
                             onClick={() => setIsOpen(false)}
                           >
                             {subItem.label}
@@ -147,7 +152,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={item.path}
-                    className="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 font-medium text-lg font-manrope"
+                    className="block px-3 py-2 rounded-md text-gray-700 hover:bg-[#1142D4]/10 hover:text-[#1142D4] font-medium text-lg font-manrope"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}

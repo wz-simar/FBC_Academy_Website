@@ -8,6 +8,7 @@ import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 import AchievementsSection from '@/components/founder/AchievementsSection'
 import { motion } from 'framer-motion'
+import { WHATSAPP_URL } from '@/data/siteLinks'
 
 const AboutFounder = () => {
   return (
@@ -15,7 +16,7 @@ const AboutFounder = () => {
       <Navbar/>
 
       <a
-        href="https://wa.me/919923646881?text=Hey%2C%20I%27m%20interested%20in%20your%20coaching%20programs%21"
+        href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed right-4 bottom-12 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform z-50"
@@ -23,7 +24,7 @@ const AboutFounder = () => {
           <FaWhatsapp className="w-6 h-6" />
       </a>
 
-      <main className="pt-16 overflow-hidden">
+      <main className="pt-16 overflow-x-hidden">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6 }}>
           <FounderHero/>
         </motion.div>

@@ -35,7 +35,7 @@ const RefundPolicy = () => {
 
           <p className="text-gray-600 mb-10 leading-relaxed text-justify">
             <span className="font-semibold text-black">
-              Fit Body Culture (fbc_academy)
+              Fit Body Culture (FBC Academy)
             </span>{" "}
             is committed to providing the best services at the best pricing. Unfortunately, we cannot offer refunds or exchanges on the purchase or subscription of any membership plan.
           </p>
@@ -81,7 +81,7 @@ const RefundPolicy = () => {
             </p>
 
             <p className="text-gray-600 mt-4 leading-relaxed">
-              The refund percentage, if applicable, will be at the discretion of Fit Body Culture (fbc_academy) management, based on the specifics of the situation.
+              The refund percentage, if applicable, will be at the discretion of Fit Body Culture (FBC Academy) management, based on the specifics of the situation.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ const RefundPolicy = () => {
           <p className="text-[#1142D4] mt-12 text-center font-bold font-playfair leading-relaxed text-xl sm:text-2xl">
             Thank you for your understanding and trust in{" "}
             <span className="font-semibold">
-              Fit Body Culture (fbc_academy)
+              Fit Body Culture (FBC Academy)
             </span>.
           </p>
 

@@ -7,7 +7,7 @@ export default function MissionSection() {
       <img
         src="/images/founder_mission.jpg"
         alt="Vision and mission background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/70" />
 

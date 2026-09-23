@@ -9,9 +9,9 @@ export default function PlansHero() {
       <div className="absolute inset-0 z-0 ">
         <div className="absolute inset-0 bg-black/60 z-10 " />
         <img
-          src="images/plans_hero.avif"
+          src="/images/plans_hero.avif"
           alt="Wellness Background"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover object-center opacity-60"
         />
       </div>
 

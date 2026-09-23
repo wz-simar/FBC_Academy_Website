@@ -2,7 +2,7 @@ export const blogsData = [
   {
     id: "hormone-optimization",
     title: "Hormone Optimization Through Fitness: Transforming Your Health and Daily Life",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 17, 2025",
     category: "BLOG",
     image: "/images/blog_1.png",
@@ -95,7 +95,7 @@ By taking these steps, you’ll not only optimize your hormones but also transfo
   {
     id: "best-fitness-program-beginners",
     title: "Best Fitness Program for Beginners: A Simple, Sustainable Path to Your Goals",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 16, 2025",
     category: "BLOG",
     image: "/images/blog_2.png",
@@ -173,7 +173,7 @@ Fitness for beginners doesn’t have to be intimidating or overly ambitious. By 
   {
     id: "simple-fitness-tips-professionals",
     title: "Simple Fitness Tips for Professionals: Achieve Your Goals Without Overhauling Your Life",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 16, 2025",
     category: "BLOG",
     image: "/images/blog_3.png",
@@ -238,7 +238,7 @@ Fitness doesn’t have to feel like another task on your to-do list. By incorpor
   {
     id: "home-vs-gym-workouts",
     title: "Home Workouts vs. Gym Workouts: The Sustainable Fitness Solution",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 14, 2025",
     category: "BLOG",
     image: "/images/blog_4.png",
@@ -304,7 +304,7 @@ Are you ready to transform your fitness routine into a sustainable lifestyle? St
   {
     id: "balanced-nutrition-weight-loss",
     title: "Balanced Nutrition for Weight Loss: A Sustainable Approach to Shedding Pounds",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 2, 2025",
     category: "BLOG",
     image: "/images/blog_5.png",
@@ -364,7 +364,7 @@ Ready to make balanced nutrition a part of your weight loss journey? Start today
   {
     id: "sustainable-weight-loss-program",
     title: "Sustainable Weight Loss Program: Your Guide to Losing Weight the Right Way",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 2, 2025",
     category: "BLOG",
     image: "/images/blog_6.png",
@@ -421,7 +421,7 @@ Sustainable weight loss isn’t about quick fixes or extreme measures, it’s ab
   {
     id: "fitness-for-busy-professionals",
     title: "Fitness for Busy Professionals: How to Stay Fit Amidst a Hectic Schedule",
-    author: "agustya.fitbodyculture",
+    author: "Ankush S. Bhaskar",
     date: "April 2, 2025",
     category: "BLOG",
     image: "/images/blog_7.png",

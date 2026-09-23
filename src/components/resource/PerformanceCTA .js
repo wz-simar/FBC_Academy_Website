@@ -61,7 +61,7 @@ const PerformanceCTA = () => {
 
   return (
     <section className="w-full py-20 px-4 md:px-10 flex justify-center bg-white">
-      <div className="w-full max-w-2xl bg-[#1D4ED8] text-white rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-lg">
+      <div className="w-full max-w-2xl bg-[#1142D4] text-white rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-lg">
         <h2 className="text-2xl md:text-4xl font-playfair font-semibold text-center">
           Get the premium eBook toolkit
         </h2>
@@ -106,7 +106,7 @@ const PerformanceCTA = () => {
               name="ebookId"
               value={formData.ebookId}
               onChange={handleChange}
-              className="w-full md:w-1/2 bg-white text-[#1D4ED8] border border-white/40 px-4 py-3 outline-none rounded-xl"
+              className="w-full md:w-1/2 bg-white text-[#1142D4] border border-white/40 px-4 py-3 outline-none rounded-xl"
             >
               {EBOOKS.map((ebook) => (
                 <option key={ebook.id} value={ebook.id}>
@@ -121,7 +121,7 @@ const PerformanceCTA = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full mt-2 bg-white text-[#1D4ED8] py-3 font-medium rounded-xl hover:bg-white/90 transition disabled:opacity-60"
+            className="w-full mt-2 bg-white text-[#1142D4] py-3 font-medium rounded-xl hover:bg-white/90 transition disabled:opacity-60"
           >
             {loading ? "Submitting..." : "Continue to Purchase"}
           </button>
