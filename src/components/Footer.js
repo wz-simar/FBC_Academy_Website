@@ -40,16 +40,22 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-white flex items-center gap-2">
-              <div className="w-13 h-13 bg-white rounded-full flex items-center justify-center">
-                <img
-                  src="/images/fbc_logo.jpeg"
-                  alt="Fitness"
-                  className="w-20 h-20 object-contain mix-blend-multiply"
-                />
-              </div>
-              FBC
-            </h2>
+            <Link
+              href="/"
+              className="inline-flex items-center gap-3 rounded-xl bg-white px-3 py-2.5"
+            >
+              <img
+                src="/logo-mark.png"
+                alt=""
+                aria-hidden="true"
+                className="h-10 w-auto object-contain"
+              />
+              <img
+                src="/logo-wordmark.png"
+                alt="Fit Body Culture"
+                className="h-11 w-auto object-contain"
+              />
+            </Link>
             <p className="text-white/70 leading-relaxed text-sm">
               Redefining elite fitness for the professional world.
               <br />

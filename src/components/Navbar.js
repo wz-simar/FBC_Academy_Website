@@ -42,18 +42,21 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-[68px] md:h-20">
 
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          {/* Logo: mark + wordmark sized independently so text stays readable */}
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0 mr-3 sm:mr-4">
             <img
-              src="/images/fbc_logo.jpeg"
-              alt="Fitness"
-              className="w-16 h-16 object-contain"
+              src="/logo-mark.png"
+              alt=""
+              aria-hidden="true"
+              className="h-9 sm:h-10 md:h-11 w-auto object-contain"
             />
-            <span className="font-bold text-xl text-gray-800 font-manrope">
-              FBC
-            </span>
+            <img
+              src="/logo-wordmark.png"
+              alt="Fit Body Culture"
+              className="h-10 sm:h-11 md:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Menu */}
