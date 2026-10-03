@@ -8,7 +8,7 @@ import TransformationSection from "@/components/TransformationSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import StoryPosters from "@/components/gallery/StoryPosters";
 import MediaSection from "@/components/gallery/MediaSection";
 import { ValorClassicBanner } from "@/components/founder/AchievementsSection";
 
@@ -57,7 +57,19 @@ export default function Home() {
           </div>
         </section>
         <MediaSection />
-        <TestimonialsSection />
+        <section className="pt-16 md:pt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl md:text-6xl font-playfair font-bold mb-4 leading-tight text-gray-900">
+              Lifestyle
+              <br />
+              <span className="text-[#1142D4]">Transformation Stories</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Real People | Real Results | Real Impact
+            </p>
+          </div>
+          <StoryPosters />
+        </section>
         <Footer />
       </main>
     </>

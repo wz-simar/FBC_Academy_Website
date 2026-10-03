@@ -69,7 +69,7 @@ const credentials = [
       "Keynote invitations including Brahmakumaris and Trainers Growth Conclave (Dubai).",
   },
   {
-    src: "/images/ebooks/total-body-reset.jpg",
+    src: "/images/ebooks/total-body-reset-worldwide.jpg",
     title: "Author of Total Body Re-Set",
     detail:
       "A practical book for busy professionals who want fitness that fits a real work week, without extreme dieting or burnout.",
@@ -79,10 +79,8 @@ const credentials = [
 const gallery = [
   "/images/achievements/achievement_1.jpg",
   "/images/achievements/achievement_4.jpg",
-  "/images/achievements/achievement_5.jpg",
   "/images/achievements/achievement_6.jpg",
   "/images/achievements/achievement_7.jpg",
-  "/images/achievements/achievement_9.jpg",
   "/images/achievements/achievement_10.jpg",
   "/images/achievements/achievement_13.jpg",
   "/images/achievements/dubai-keynote-speaker.jpg",
@@ -103,17 +101,10 @@ const keynotePhotos = [
   },
 ];
 
-const actingWork = [
-  {
-    src: "/images/founder/acting_1.jpg",
-    caption: "Colors TV: Pinjara Khubsurti Ka",
-  },
-  { src: "/images/founder/acting_2.jpg", caption: "Cuffed (MX Player)" },
-  { src: "/images/founder/acting_3.jpg", caption: "Twisted 2 (Web Series)" },
-  { src: "/images/founder/acting_4.jpg", caption: "mid-day Press Coverage" },
-  { src: "/images/founder/acting_5.jpg", caption: "On Set" },
-  { src: "/images/founder/acting_6.jpg", caption: "Character Work" },
-];
+// Brand Associations & Podcasts — hidden for now, restore with the section below.
+// const actingWork = [
+//   { src: "/images/founder/acting_5.jpg", caption: "On Set" },
+// ];
 
 export default function AchievementsSection() {
   return (
@@ -194,26 +185,25 @@ export default function AchievementsSection() {
           </div>
         </div>
 
-        {/* Acting work */}
+        {/* Brand Associations & Podcasts — hidden for now.
         <div className="mb-14">
           <div className="text-center mb-6">
             <h3 className="font-playfair text-2xl font-bold text-gray-900">
               Brand Associations & Podcasts
             </h3>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
-              Television and web series work, including Colors TV and MX Player
-              projects.
+              On set with the cast.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="flex justify-center">
             {actingWork.map((item) => (
-              <figure key={item.src} className="group">
+              <figure key={item.src} className="group w-full max-w-[280px]">
                 <div className="relative aspect-square overflow-hidden rounded-xl border border-gray-200 bg-gray-100">
                   <Image
                     src={item.src}
                     alt={item.caption}
                     fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 17vw"
+                    sizes="280px"
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -224,23 +214,25 @@ export default function AchievementsSection() {
             ))}
           </div>
         </div>
+        */}
 
-        {/* Additional recognition gallery — contain, never crop posters */}
+        {/* Seven posters: four across, then three centered at the same size
+            so the last row is a full set instead of one card stuck on the left. */}
         <div>
           <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-6 text-center">
             More Recognition
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
             {gallery.map((src) => (
               <div
                 key={src}
-                className="relative aspect-[4/5] overflow-hidden rounded-xl border border-gray-200 bg-gray-100"
+                className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-100 sm:w-[calc(50%-0.7rem)] lg:w-[calc(25%-1rem)]"
               >
                 <Image
                   src={src}
                   alt="Founder recognition"
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-contain p-2"
                 />
               </div>
