@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer"
 import BodyJournal from "@/components/gallery/BodyJournal"
-import GalleryHero from "@/components/gallery/GalleryHero"
 import LimitedAvailability from "@/components/gallery/LimitedAvailability"
+import StoryPosters from "@/components/gallery/StoryPosters"
 import Navbar from "@/components/Navbar"
 import { FaWhatsapp } from "react-icons/fa"
 
@@ -32,10 +32,7 @@ const Transformations = () => {
           </p>
         </div>
 
-        <GalleryHero
-          showHeading={false}
-          initialCount={9}
-        />
+        <StoryPosters />
         <BodyJournal />
         <LimitedAvailability />
         <Footer />

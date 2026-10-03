@@ -1,3 +1,55 @@
+/** Designed story posters. Same aspect ratio (819×1024). Order is display order. */
+export const STORY_POSTERS = [
+  {
+    name: "Jayesh Rathod",
+    src: "/images/stories/01-jayesh-rathod.jpg",
+  },
+  {
+    name: "Shalaka Patil",
+    src: "/images/stories/02-shalaka-patil.jpg",
+  },
+  {
+    name: "Kunal Santwani",
+    src: "/images/stories/03-kunal-santwani.jpg",
+  },
+  {
+    name: "Pooja Chaudhary",
+    src: "/images/stories/04-pooja-chaudhary.jpg",
+  },
+  {
+    name: "Vishal Sharma",
+    src: "/images/stories/05-vishal-sharma.jpg",
+  },
+  {
+    name: "Dhwani Thaker",
+    src: "/images/stories/06-dhwani-thaker.jpg",
+  },
+  {
+    name: "Gaurav Pahwa",
+    src: "/images/stories/07-gaurav-pahwa.jpg",
+  },
+  {
+    name: "Anam Khan",
+    src: "/images/stories/08-anam-khan.jpg",
+  },
+  {
+    name: "Mangesh V Kelkar",
+    src: "/images/stories/09-mangesh-kelkar.jpg",
+  },
+  {
+    name: "Saee Arvind Jondhale",
+    src: "/images/stories/10-saee-jondhale.jpg",
+  },
+  {
+    name: "Vinod Bakshi",
+    src: "/images/stories/11-vinod-bakshi.jpg",
+  },
+  {
+    name: "Ikroop Nijjar",
+    src: "/images/stories/12-ikroop-nijjar.jpg",
+  },
+]
+
 /** Client transformation photos from FBC Drive folder */
 export const TRANSFORMATION_IMAGES = [
   {
