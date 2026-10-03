@@ -10,7 +10,7 @@ const LimitedAvailability = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
-        className="bg-[#F3F3F7] rounded-xl p-8 md:p-14 h-[300px] sm:h-[400px] flex flex-col items-center justify-center text-center space-y-6 shadow-sm border border-gray-100"
+        className="bg-[#F3F3F7] rounded-xl p-8 md:p-14 min-h-[300px] sm:min-h-[400px] flex flex-col items-center justify-center text-center space-y-6 shadow-sm border border-gray-100"
       >
 
         {/* Top Text */}
@@ -19,8 +19,10 @@ const LimitedAvailability = () => {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-7xl font-playfair font-bold text-gray-900">
-          Start Your Chapter
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-playfair font-bold text-gray-900 leading-tight max-w-4xl">
+          START YOUR
+          <br />
+          “TOTAL BODY RE-SET”
         </h2>
 
         {/* Buttons */}

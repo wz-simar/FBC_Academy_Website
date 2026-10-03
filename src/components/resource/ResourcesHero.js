@@ -40,9 +40,9 @@ const ResourcesHero = () => {
           <div className="p-0 flex items-start bg-gray-100">
             <div className="relative w-full md:h-[540px] overflow-hidden">
               <img
-                src="/ank1.jpg"
-                alt="featured"
-                className="w-full h-auto md:h-full md:absolute md:inset-0 md:object-cover md:object-top block"
+                src="/images/resources/featured-academy.jpg"
+                alt="Ankush S Bhaskar at Fit Body Culture Academy"
+                className="w-full h-auto md:h-full md:absolute md:inset-0 md:object-cover md:object-center block"
               />
             </div>
           </div>

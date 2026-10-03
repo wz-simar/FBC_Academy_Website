@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar"
 import EliteBlueprints from "@/components/resource/EliteBlueprints"
 import FitnessPartnerSection from "@/components/resource/FitnessPartnerSection "
 import LatestResearch from "@/components/resource/LatestResearch"
-import PerformanceCTA from "@/components/resource/PerformanceCTA "
 import ProvenBlueprints from "@/components/resource/ProvenBlueprints "
 import ResourcesHero from "@/components/resource/ResourcesHero"
 import { FaWhatsapp } from 'react-icons/fa';
@@ -42,10 +41,6 @@ const Resources = () => {
 
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6, delay: 0.1 }}>
           <ProvenBlueprints />
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6, delay: 0.1 }}>
-          <PerformanceCTA />
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6, delay: 0.1 }}>

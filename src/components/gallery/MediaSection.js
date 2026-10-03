@@ -32,12 +32,6 @@ function MediaCard({ item }) {
           sizes="320px"
           className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
-        <div className="absolute top-3 left-3">
-          <span className="inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#1142D4] shadow-sm">
-            {item.outlet}
-          </span>
-        </div>
       </div>
     </article>
   );

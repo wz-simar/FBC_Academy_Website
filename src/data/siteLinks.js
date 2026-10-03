@@ -15,7 +15,7 @@ export const APP_STORE_URL =
   "https://apps.apple.com/in/app/fbc-academy/id6757097093"
 
 /** Total Body Re-Set published book on Amazon India */
-export const TBR_AMAZON_URL = "https://www.amazon.in/dp/B0H1X3QQ2K"
+export const TBR_AMAZON_URL = "https://amzn.in/d/06s4XWdV"
 
 export const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.wellnessz.fitbody&hl=en_IN"

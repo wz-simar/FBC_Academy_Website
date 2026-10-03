@@ -26,11 +26,8 @@ export default function MissionSection() {
 
         <div className="mt-12 pt-8 border-t border-white/20 inline-block min-w-[240px]">
           <h3 className="text-xl md:text-2xl font-semibold font-playfair">
-            Ankush S. Bhaskar
+            Ankush S Bhaskar – Founder – Fit Body Culture
           </h3>
-          <p className="text-white/70 text-sm md:text-base mt-2 tracking-wide">
-            Founder &amp; Lead Strategist, FBC
-          </p>
         </div>
       </div>
     </section>

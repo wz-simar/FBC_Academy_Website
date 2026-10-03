@@ -1,7 +1,6 @@
 // src/components/Hero.js
-import { Fragment } from "react";
 import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
+import MediaLogoStrip from "@/components/MediaLogoStrip";
 
 export default function Hero() {
   return (
@@ -62,9 +61,9 @@ export default function Hero() {
             className="flex-1 relative w-full max-w-lg md:max-w-xl min-w-0"
           >
             <img
-              src="/images/Client/client_1.jpg"
-              alt="Hero"
-              className="w-full aspect-[4/5] sm:aspect-auto sm:h-[400px] md:h-[520px] object-cover object-top rounded-lg shadow-lg"
+              src="/images/founder/hero-stage.jpg"
+              alt="Ankush Bhaskar speaking on stage"
+              className="w-full aspect-[4/5] sm:aspect-auto sm:h-[400px] md:h-[520px] object-cover object-[center_20%] rounded-lg shadow-lg"
             />
 
             <motion.div
@@ -74,11 +73,8 @@ export default function Hero() {
               className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/80 backdrop-blur-md rounded-lg px-3 py-2.5 sm:px-4 sm:py-3 flex items-center justify-between shadow-lg"
             >
               <div>
-                <p className="text-xs sm:text-sm font-semibold text-[#1142D4] uppercase">
-                  Fitness Coach
-                </p>
-                <h3 className="text-base sm:text-lg font-bold text-gray-800">
-                  Ankush Bhaskar
+                <h3 className="text-sm sm:text-base font-bold text-gray-800 leading-snug">
+                  Ankush S Bhaskar – Founder – Fit Body Culture
                 </h3>
               </div>
             </motion.div>
@@ -89,43 +85,7 @@ export default function Hero() {
       {/* Trust Strip (full width) */}
       <div className="w-full bg-[#f4f7f6] border-y border-gray-200 py-6 mt-8 sm:mt-12 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
-          {/* Media Logos Marquee */}
-          <div className="flex-1 w-full min-w-0 overflow-hidden flex items-center">
-            <span className="text-gray-500 font-medium whitespace-nowrap mr-4 sm:mr-6 shrink-0 text-sm sm:text-base">
-              As Featured In:
-            </span>
-            <Marquee
-              gradient
-              gradientColor={[244, 247, 246]}
-              speed={40}
-              className="flex items-center"
-            >
-              {[0, 1].map((copy) => (
-                <Fragment key={copy}>
-                  <img
-                    src="/thetimesofindia.png"
-                    alt="The Times of India"
-                    className="mx-8 h-10 sm:h-12 object-contain"
-                  />
-                  <img
-                    src="/mid-day.png"
-                    alt="mid-day"
-                    className="mx-8 h-10 sm:h-12 object-contain"
-                  />
-                  <img
-                    src="/zee5.png"
-                    alt="ZEE5"
-                    className="mx-8 h-10 sm:h-12 object-contain"
-                  />
-                  <img
-                    src="/theprint.png"
-                    alt="The Print"
-                    className="mx-8 h-10 sm:h-12 object-contain"
-                  />
-                </Fragment>
-              ))}
-            </Marquee>
-          </div>
+          <MediaLogoStrip />
 
           {/* Stats */}
           <div className="flex flex-wrap items-center gap-6 sm:gap-8 justify-center md:justify-end whitespace-nowrap md:border-l md:border-gray-300 md:pl-10 shrink-0">

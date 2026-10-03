@@ -68,6 +68,12 @@ const credentials = [
     detail:
       "Keynote invitations including Brahmakumaris and Trainers Growth Conclave (Dubai).",
   },
+  {
+    src: "/images/ebooks/total-body-reset.jpg",
+    title: "Author of Total Body Re-Set",
+    detail:
+      "A practical book for busy professionals who want fitness that fits a real work week, without extreme dieting or burnout.",
+  },
 ];
 
 const gallery = [
@@ -79,7 +85,7 @@ const gallery = [
   "/images/achievements/achievement_9.jpg",
   "/images/achievements/achievement_10.jpg",
   "/images/achievements/achievement_13.jpg",
-  "/images/achievements/achievement_14.jpg",
+  "/images/achievements/dubai-keynote-speaker.jpg",
 ];
 
 const keynotePhotos = [
@@ -92,8 +98,8 @@ const keynotePhotos = [
     alt: "Ankush S Bhaskar presenting frameworks on stage in Dubai",
   },
   {
-    src: "/images/founder/keynote_3.jpg",
-    alt: "Audience of fitness trainers at the Trainers Growth Conclave, Dubai",
+    src: "/images/founder/keynote_panel.jpg",
+    alt: "Panel discussion at the Trainers Growth Conclave, Dubai",
   },
 ];
 
@@ -192,7 +198,7 @@ export default function AchievementsSection() {
         <div className="mb-14">
           <div className="text-center mb-6">
             <h3 className="font-playfair text-2xl font-bold text-gray-900">
-              Beyond Coaching: On Screen
+              Brand Associations & Podcasts
             </h3>
             <p className="mt-2 text-gray-600 text-sm md:text-base">
               Television and web series work, including Colors TV and MX Player

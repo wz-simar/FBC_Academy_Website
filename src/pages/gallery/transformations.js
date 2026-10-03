@@ -22,13 +22,13 @@ const Transformations = () => {
 
       <main className="pt-24 min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4">
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
-            Real <span className="text-[#1142D4]">Transformations</span>
+          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4 leading-tight">
+            Lifestyle
+            <br />
+            <span className="text-[#1142D4]">Transformation Stories</span>
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Proof of the FBC Method. Real clients, real physiques, and results
-            built through consistency, simplified training, and nutrition that
-            fits a demanding life.
+            Real People | Real Results | Real Impact
           </p>
         </div>
 

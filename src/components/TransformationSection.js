@@ -13,20 +13,19 @@ export default function TransformationSection() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="flex-1 flex flex-col md:flex-row bg-[#0b1220]"
+        className="flex-1 flex flex-col items-center md:flex-row md:items-center bg-[#0b1220]"
       >
-        <div className="relative w-full md:w-[42%] shrink-0 h-[240px] sm:h-[280px] md:h-auto md:min-h-[320px] bg-[#111827] flex items-center justify-center">
+        <div className="relative my-6 w-[min(200px,72vw)] shrink-0 self-center aspect-[2187/2448]">
           <Image
             src="/choose_path_a.jpg"
             alt="Get Fit — physique and professional presence"
-            width={2187}
-            height={2448}
-            sizes="(max-width: 768px) 100vw, 25vw"
-            className="max-h-[240px] sm:max-h-[280px] md:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
+            fill
+            sizes="200px"
+            className="object-contain"
           />
         </div>
 
-        <div className="flex flex-col justify-center text-left px-6 py-7 md:px-8 md:py-8">
+        <div className="flex w-full min-w-0 flex-col justify-center text-left px-6 py-7 md:flex-1 md:px-8 md:py-8">
           <div className="bg-[#1142D4] text-white rounded-full px-4 py-1.5 text-xs font-bold w-fit mb-3 uppercase tracking-wider">
             Option A
           </div>
@@ -59,20 +58,19 @@ export default function TransformationSection() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="flex-1 flex flex-col md:flex-row bg-[#1a1f1e]"
+        className="flex-1 flex flex-col items-center md:flex-row md:items-center bg-[#1a1f1e]"
       >
-        <div className="relative w-full md:w-[42%] shrink-0 h-[240px] sm:h-[280px] md:h-auto md:min-h-[320px] bg-[#2a2f2e] flex items-center justify-center">
+        <div className="relative my-6 w-[min(168px,60vw)] shrink-0 self-center aspect-[780/1146]">
           <Image
             src="/choose_path_b.png"
             alt="Coach — teaching and mentoring on the whiteboard"
-            width={780}
-            height={1146}
-            sizes="(max-width: 768px) 100vw, 25vw"
-            className="max-h-[240px] sm:max-h-[280px] md:max-h-[360px] max-w-full w-auto h-auto object-contain p-3"
+            fill
+            sizes="168px"
+            className="object-contain"
           />
         </div>
 
-        <div className="flex flex-col justify-center text-left px-6 py-7 md:px-8 md:py-8">
+        <div className="flex w-full min-w-0 flex-col justify-center text-left px-6 py-7 md:flex-1 md:px-8 md:py-8">
           <div className="bg-[#67bc2a] text-white rounded-full px-4 py-1.5 text-xs font-bold w-fit mb-3 uppercase tracking-wider">
             Option B
           </div>
